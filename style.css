@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+body {
+    font-family: 'Quicksand', 'Roboto', 'arial', 'sans-serif';
+    background: #f4f4f4;
+    font-weight: 800;
+}
+
+nav {
+    background: aquamarine;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px
+}
+
+.generator {
+    margin: auto;
+    text-align: center;
+    background-color: #d8d4d4;
+    width: 300px;
+    height: 200px;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+.generator>h2 {
+    padding-top: 10px;
+
+}
+
+.letter {
+    font-size: 30px;
+}
+
+.sect2 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+.button {
+    width: 50%;
+    margin-top: 10px;
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.generatorList {
+    height: auto !important;
+}
+
+input.addPoints {
+    border-radius: 10px;
+    border: 0;
+    width: 50px;
+    height: 40px;
+    font-size: 17px;
+}
+
+div.leaderboard {
+    z-index: 100;
+    position: absolute;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -230px;
+    height: 315px;
+}
+
+h3.winnerName {
+    text-align: left;
+}
+
+table.winners {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input#newTeamName {
+    border-radius: 10px;
+    border: 0;
+    height: 36px;
+}
+
+.scoreboardDiv {
+    /* padding: 0px !important; */
+}

@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scattergories</title>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-    body{
-    font-family: 'Quicksand','Roboto','arial','sans-serif';
-    background: #f4f4f4;
-    font-weight: 800;
-    }
-    nav{
-        background: aquamarine;
-        color: #333;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 10px
-    }
+<link rel="stylesheet" href="style.css">
 
-    .generator{
-    margin: auto;
-    text-align: center;
-    background-color: #d8d4d4;
-    width: 300px;
-    height: 200px;
-    border-radius: 3px;
-    /* padding-top: 5px; */
-    }
-
-    .generator > h2{
-        padding-top: 10px;
-        
-    }
-
-    .letter{
-        font-size: 30px;
-    }
-
-
-    
-    .button{
-    width: 50%;
-    margin-top: 10px;
-    background-color: aquamarine;
-    border: 0;
-    border-radius: 5px;
-    height: 30px;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-
-
-</style>
 <body>
 
-    <nav><h2>Ash's Letter Generator</h2></nav>
+    <nav>
+        <h2>Scattergories</h2>
+    </nav>
+    <div class="leaderboardArea"></div>
 
-    <div class="generator">
-        <h2>Generate a letter</h2>
-        <h3 class="letter">A</h3>
-        <button class="button">Go</button>
-    </div>
-    
+    <section class="sect2">
+
+        <div class="generator">
+            <h2>Add a team </h2>
+            <input type="text" id="newTeamName" placeholder="Name"> <br>
+            <button class="button addTeam">Add</button>
+        </div>
+
+        <div class="generator">
+            <h2>Generate a letter</h2>
+            <h3 class="letter">A</h3>
+            <button class="button letterGenBtn">Go</button>
+        </div>
+
+        <div class="timer generator">
+            <h2>Timer</h2>
+            <h1 class="time">02:00</h1>
+            <button class="button timerBtn">Start Timer</button>
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <section class="sect2">
+        <div class="generator scoreboardDiv">
+            <table style="background: #d8d4d4" class="generator scoreboard">
+                <th>Team</th>
+                <th>Score</th>
+                <th>Add Points</th>
+                <!-- <tr>
+                    <td>Team One</td>
+                    <td>8</td>
+                    <td><input type="text" class="addPoints"></td>
+                </tr>
+
+                <tr>
+                    <td>Team Two</td>
+                    <td>6</td>
+                    <td><input type="text" class="addPoints"></td>
+                </tr> -->
+
+            </table>
+            <button class="button updateScore">Update</button>
+        </div>
+
+        <div class="generator generatorList">
+            <h2>List</h2>
+            <div class="listSection"></div>
+            <button class="button showList">Show Next List</button>
+        </div>
+
+
+
+        <div class="generator">
+            <h2>Finish Game</h2>
+            <button class="button confetti">Winner</button>
+        </div>
+    </section>
+
+    <!-- <div class="generator">
+        <h2>Enter Your Stuff</h2>
+        <input type="text" id="subjects">
+        <button class="submit"></button>
+    </div> -->
+
+
+
 </body>
-<script src="generator.js"></script>
+<script src="confetti.min.js"></script>
+<script src="app.js"></script>
+
 </html>
